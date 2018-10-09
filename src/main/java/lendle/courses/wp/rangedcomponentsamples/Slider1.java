@@ -5,6 +5,7 @@
  */
 package lendle.courses.wp.rangedcomponentsamples;
 
+import java.awt.Color;
 import java.awt.FlowLayout;
 import javax.swing.JFrame;
 import javax.swing.JSlider;
@@ -36,7 +37,16 @@ public class Slider1 {
         //majorTickSpacing to 
         //
         //and then add the slider to frame
+        slider.setMinimum(0);
+        slider.setMaximum(100);
+        slider.setValue(10);
+        slider.setPaintTicks(true);
+        slider.setPaintTrack(true);
+        slider.setPaintLabels(true);
+        slider.setMinorTickSpacing(10);
+        slider.setMajorTickSpacing(20);
         
+        frame.add(slider);
         //////////////////////////////////
         
         frame.setVisible(true);
